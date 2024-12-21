@@ -17,6 +17,9 @@
     <sys:Boolean x:Key="DE_LimitBackgroundHeight">False</sys:Boolean>
     <sys:Double x:Key="DE_BackgroundHeight">300</sys:Double>
     
+    <sys:Boolean x:Key="DE_ShowGirdViewBackground">True</sys:Boolean>
+    <sys:Double x:Key="DE_GirdViewBackgroundHeight">240</sys:Double>
+
     <Visibility x:Key="LM_ShowFeaturesLabel">Collapsed</Visibility>
 
     <Visibility x:Key="CL_ShowLocalizationsLabel">Collapsed</Visibility>

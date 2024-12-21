@@ -21,6 +21,9 @@ Constants:
   - DE_ShowPlayTime: Display the playtime
   - DE_LimitBackgroundHeight: Limit background height
   - DE_BackgroundHeight(100,1000): Background height
+  - Grid View
+  - DE_ShowGirdViewBackground: Show background in grid view
+  - DE_GirdViewBackgroundHeight(0, 320): Background height in grid view
   - GameActivity
   - GA_ShowAvgFps: Display the average FPS in game details view
   - SuccessStory
