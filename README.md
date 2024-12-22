@@ -1,3 +1,20 @@
+# DefaultExtendPlus theme for Playnite
+Modified version of [playnite-defaultextend-theme](https://github.com/Lacro59/playnite-defaultextend-theme/).
+
+## Changes from the original
+* Overall
+  * Removed "Show Age Rating" feature, because duplicating with "[LibraryManagement](https://github.com/Lacro59/playnite-librarymanagement-plugin)" add-on.
+* Grid View
+  * Added a new option to show only one row, similar to the details view.
+* Game Details in Grid View
+  * Changed menu buttons to split into two rows due to narrow width.
+  * Added a new option to show game background image.
+  * Added a new option to show game properties with multiple values ​​horizontally.
+
+---
+__The rest of this readme is unchanged.__
+---
+
 [![Crowdin](https://badges.crowdin.net/playnite-extensions/localized.svg)](https://crowdin.com/project/playnite-extensions)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Lacro59/playnite-defaultextend-theme?cacheSeconds=5000&logo=github)](https://github.com/Lacro59/playnite-defaultextend-theme/releases/latest)
 [![GitHub Release Date](https://img.shields.io/github/release-date/Lacro59/playnite-defaultextend-theme?cacheSeconds=5000)](https://github.com/Lacro59/playnite-defaultextend-theme/releases/latest)
