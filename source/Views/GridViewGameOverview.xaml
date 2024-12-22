@@ -128,14 +128,14 @@
                                     </TextBlock>
 
                                     <ContentControl x:Name="LibraryManagement_PluginAgeRating" Height="32"
-                                                    DockPanel.Dock="Right" Margin="5,0,0,0"
+                                                    DockPanel.Dock="Right" Margin="5,0,10,0"
                                                     VerticalAlignment="Center" HorizontalAlignment="Right" />
                                 </DockPanel>
 
                                 <Grid DockPanel.Dock="Top" Margin="0,10,0,5" Background="Transparent">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="150" />
-                                        <ColumnDefinition Width="150" />
+                                        <ColumnDefinition Width="120" />
+                                        <ColumnDefinition Width="120" />
                                         <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="Auto" />
@@ -208,7 +208,7 @@
                                         <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
 
                                     <!-- LibraryManagement plugin features list -->
@@ -337,7 +337,7 @@
                                             <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
                                                 <Label Content="{DynamicResource LOCGameActivityAvgFps}" 
                                                                HorizontalAlignment="Center" />
-                                                <Label Margin="10,0,0,0" 
+                                                <Label Margin="10,0,5,0"
                                                                Content="{PluginSettings Plugin=GameActivity, Path=AvgFpsAllSession}"
                                                                HorizontalAlignment="Center" />
                                             </StackPanel>
