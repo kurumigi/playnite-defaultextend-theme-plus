@@ -22,6 +22,7 @@ Constants:
   - DE_LimitBackgroundHeight: Limit background height
   - DE_BackgroundHeight(100,1000): Background height
   - Grid View
+  - DE_GridViewOneLine: Display list game with one line
   - DE_ShowGirdViewBackground: Show background in grid view
   - DE_GirdViewBackgroundHeight(0, 320): Background height in grid view
   - DE_ShowGamePropertyHorizontally: Display game properties horizontally

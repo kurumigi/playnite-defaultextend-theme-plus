@@ -165,7 +165,18 @@
                                             DockPanel.Dock="Right"
                                             RenderOptions.BitmapScalingMode="Fant" />
 
-                            <StackPanel Grid.Row="2" Orientation="Horizontal" Width="{Settings GridItemWidth}">
+                            <StackPanel Grid.Row="2" Tag="{DynamicResource DE_GridViewOneLine}" Orientation="Horizontal" Width="{Settings GridItemWidth}">
+                                <StackPanel.Style>
+                                    <Style TargetType="StackPanel">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Tag}" Value="True">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </StackPanel.Style>
+
                                 <!-- CheckLocalizations view item -->
                                 <StackPanel VerticalAlignment="Center"
                                             Visibility="{PluginSettings Plugin=CheckLocalizations, Path=EnableIntegrationViewItem, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
