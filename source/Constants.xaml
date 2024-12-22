@@ -19,6 +19,7 @@
     
     <sys:Boolean x:Key="DE_ShowGirdViewBackground">True</sys:Boolean>
     <sys:Double x:Key="DE_GirdViewBackgroundHeight">240</sys:Double>
+    <sys:Boolean x:Key="DE_ShowGamePropertyHorizontally">True</sys:Boolean>
 
     <Visibility x:Key="LM_ShowFeaturesLabel">Collapsed</Visibility>
 

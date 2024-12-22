@@ -432,7 +432,31 @@
                                                         <TextBlock Text="{DynamicResource LOCGamePlatformTitle}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsPlatforms" />
+                                                <ItemsControl Name="PART_ItemsPlatforms" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsPlatforms, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsPlatforms, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
 
                                                 <Label Name="PART_ElemGenres">
                                                     <StackPanel Orientation="Horizontal">
@@ -440,7 +464,31 @@
                                                         <TextBlock Text="{DynamicResource LOCGenreLabel}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsGenres"  />
+                                                <ItemsControl Name="PART_ItemsGenres" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsGenres, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsGenres, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
 
                                                 <Label Name="PART_ElemDevelopers">
                                                     <StackPanel Orientation="Horizontal">
@@ -448,7 +496,31 @@
                                                         <TextBlock Text="{DynamicResource LOCDeveloperLabel}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsDevelopers" />
+                                                <ItemsControl Name="PART_ItemsDevelopers" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsDevelopers, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsDevelopers, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
 
                                                 <Label Name="PART_ElemPublishers">
                                                     <StackPanel Orientation="Horizontal">
@@ -456,7 +528,31 @@
                                                         <TextBlock Text="{DynamicResource LOCPublisherLabel}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsPublishers" />
+                                                <ItemsControl Name="PART_ItemsPublishers" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsPublishers, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsPublishers, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
 
                                                 <Label Name="PART_ElemReleaseDate">
                                                     <StackPanel Orientation="Horizontal">
@@ -472,7 +568,31 @@
                                                         <TextBlock Text="{DynamicResource LOCGameCategoriesTitle}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsCategories" />
+                                                <ItemsControl Name="PART_ItemsCategories" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsCategories, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsCategories, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
 
                                                 <Label Name="PART_ElemFeatures">
                                                     <StackPanel Orientation="Horizontal">
@@ -480,44 +600,30 @@
                                                         <TextBlock Text="{DynamicResource LOCFeaturesLabel}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsFeatures" Tag="{DynamicResource DE_LimitFeaturesHeight}"
-                                                          ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                                                          ScrollViewer.VerticalScrollBarVisibility="Auto">
-                                                    <ItemsControl.Style>
-                                                        <Style TargetType="{x:Type ItemsControl}" BasedOn="{StaticResource {x:Type ItemsControl}}">
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding ElementName=PART_ItemsTags, Path=Tag}" Value="True">
-                                                                    <Setter Property="MaxHeight" Value="{DynamicResource DE_FeaturesHeight}" />
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </ItemsControl.Style>
-
-                                                    <ItemsControl.Template>
-                                                        <ControlTemplate TargetType="{x:Type ItemsControl}">
-                                                            <Border x:Name="Border"
-                                                                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                                                                    Background="{TemplateBinding Background}"
-                                                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                                                    BorderThickness="{TemplateBinding BorderThickness}">
-                                                                <ScrollViewer Margin="0"
-                                                                              Focusable="False"
-                                                                              Padding="{TemplateBinding Padding}"
-                                                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                                                                              HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}"
-                                                                              VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}"
-                                                                              CanContentScroll="{TemplateBinding ScrollViewer.CanContentScroll}">
-                                                                    <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
-                                                                </ScrollViewer>
-                                                            </Border>
-                                                            <ControlTemplate.Triggers>
-                                                                <Trigger Property="IsEnabled" Value="False">
-                                                                    <Setter TargetName="Border" Property="Background" Value="Gray" />
-                                                                    <Setter TargetName="Border" Property="BorderBrush" Value="Silver" />
-                                                                </Trigger>
-                                                            </ControlTemplate.Triggers>
-                                                        </ControlTemplate>
-                                                    </ItemsControl.Template>
+                                                <ItemsControl Name="PART_ItemsFeatures" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsFeatures, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsFeatures, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
                                                 </ItemsControl>
 
                                                 <Label Name="PART_ElemTags">
@@ -526,44 +632,30 @@
                                                         <TextBlock Text="{DynamicResource LOCTagsLabel}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsTags" Tag="{DynamicResource DE_LimitTagsHeight}"
-                                                              ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                                                              ScrollViewer.VerticalScrollBarVisibility="Auto">
-                                                    <ItemsControl.Style>
-                                                        <Style TargetType="{x:Type ItemsControl}" BasedOn="{StaticResource {x:Type ItemsControl}}">
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding ElementName=PART_ItemsTags, Path=Tag}" Value="True">
-                                                                    <Setter Property="MaxHeight" Value="{DynamicResource DE_TagsHeight}" />
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </ItemsControl.Style>
-                                                    
-                                                    <ItemsControl.Template>
-                                                        <ControlTemplate TargetType="{x:Type ItemsControl}">
-                                                            <Border x:Name="Border"
-                                                                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                                                                    Background="{TemplateBinding Background}"
-                                                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                                                    BorderThickness="{TemplateBinding BorderThickness}">
-                                                                <ScrollViewer Margin="0"
-                                                                              Focusable="False"
-                                                                              Padding="{TemplateBinding Padding}"
-                                                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                                                                              HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}"
-                                                                              VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}"
-                                                                              CanContentScroll="{TemplateBinding ScrollViewer.CanContentScroll}">
-                                                                    <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
-                                                                </ScrollViewer>
-                                                            </Border>
-                                                            <ControlTemplate.Triggers>
-                                                                <Trigger Property="IsEnabled" Value="False">
-                                                                    <Setter TargetName="Border" Property="Background" Value="Gray" />
-                                                                    <Setter TargetName="Border" Property="BorderBrush" Value="Silver" />
-                                                                </Trigger>
-                                                            </ControlTemplate.Triggers>
-                                                        </ControlTemplate>
-                                                    </ItemsControl.Template>
+                                                <ItemsControl Name="PART_ItemsTags" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsTags, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsTags, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
                                                 </ItemsControl>
 
                                                 <Label Name="PART_ElemAgeRating">
@@ -572,7 +664,31 @@
                                                         <TextBlock Text="{DynamicResource LOCAgeRatingLabel}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsAgeRatings" />
+                                                <ItemsControl Name="PART_ItemsAgeRatings" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsAgeRatings, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsAgeRatings, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
 
                                                 <Label Name="PART_ElemSeries">
                                                     <StackPanel Orientation="Horizontal">
@@ -580,7 +696,31 @@
                                                         <TextBlock Text="{DynamicResource LOCSeriesLabel}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsSeries" />
+                                                <ItemsControl Name="PART_ItemsSeries" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsSeries, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsSeries, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
 
                                                 <Label Name="PART_ElemSource">
                                                     <StackPanel Orientation="Horizontal">
@@ -596,7 +736,31 @@
                                                         <TextBlock Text="{DynamicResource LOCRegionLabel}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsRegions" />
+                                                <ItemsControl Name="PART_ItemsRegions" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsRegions, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsRegions, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
 
                                                 <Label Name="PART_ElemVersion">
                                                     <StackPanel Orientation="Horizontal">
@@ -636,7 +800,31 @@
                                                         <TextBlock Text="{DynamicResource LOCLinksLabel}" />
                                                     </StackPanel>
                                                 </Label>
-                                                <ItemsControl Name="PART_ItemsLinks" />
+                                                <ItemsControl Name="PART_ItemsLinks" Tag="{DynamicResource DE_ShowGamePropertyHorizontally}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel VerticalAlignment="Center">
+                                                                <WrapPanel.Resources>
+                                                                    <Style TargetType="WrapPanel">
+                                                                        <Setter Property="Orientation" Value="Vertical" />
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsLinks, Path=Tag}" Value="True">
+                                                                                <Setter Property="Orientation" Value="Horizontal" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                    <Style TargetType="ContentPresenter">
+                                                                        <Style.Triggers>
+                                                                            <DataTrigger Binding="{Binding ElementName=PART_ItemsLinks, Path=Tag}" Value="True">
+                                                                        <Setter Property="Margin" Value="0,0,12,0" />
+                                                                            </DataTrigger>
+                                                                        </Style.Triggers>
+                                                                    </Style>
+                                                                </WrapPanel.Resources>
+                                                            </WrapPanel>
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
                                             </GridEx>
                                         </StackPanel>
 

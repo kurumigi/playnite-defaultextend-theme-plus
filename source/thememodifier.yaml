@@ -24,6 +24,7 @@ Constants:
   - Grid View
   - DE_ShowGirdViewBackground: Show background in grid view
   - DE_GirdViewBackgroundHeight(0, 320): Background height in grid view
+  - DE_ShowGamePropertyHorizontally: Display game properties horizontally
   - GameActivity
   - GA_ShowAvgFps: Display the average FPS in game details view
   - SuccessStory
