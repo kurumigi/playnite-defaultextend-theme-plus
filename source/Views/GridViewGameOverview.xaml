@@ -1151,15 +1151,14 @@
 
                                             <TabItem Visibility="{PluginSettings Plugin=SuccessStory, Path=HasData, Mode=OneWay, FallbackValue={x:Static Visibility.Collapsed}}">
                                                 <TabItem.Header>
-                                                    <StackPanel Orientation="Horizontal" Tag="{DynamicResource SS_ShowProgressBar}" Name="PART_SSTabHeader">
-                                                        <TextBlock Text="{DynamicResource LOCSuccessStoryAchievements}" VerticalAlignment="Center" />
+                                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Tag="{DynamicResource SS_ShowProgressBar}" Name="PART_SSTabHeader">
+                                                        <TextBlock Text="{DynamicResource LOCSuccessStoryAchievements}" />
 
-                                                        <ProgressBar Minimum="0" Maximum="100" Height="20" Width="80" Margin="5,0,0,0"
-                                                                VerticalAlignment="Center"
+                                                        <ProgressBar Minimum="0" Maximum="100" Height="{DynamicResource FontSizeLarge}" Width="80" Margin="5,0,0,0"
                                                                 Visibility="{Binding ElementName=PART_SSTabHeader, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
                                                                 Value="{PluginSettings Plugin=SuccessStory, Path=Percent}" />
 
-                                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,0,0,0"
+                                                        <StackPanel Orientation="Horizontal" Margin="5,0,0,0"
                                                             Visibility="{Binding ElementName=PART_SSTabHeader, Path=Tag, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
                                                             <TextBlock Text="("  />
                                                             <TextBlock Text="{PluginSettings Plugin=SuccessStory, Path=Unlocked, Mode=OneWay, FallbackValue=''}" />
