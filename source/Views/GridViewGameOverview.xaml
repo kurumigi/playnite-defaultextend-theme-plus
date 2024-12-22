@@ -126,6 +126,10 @@
                                             <DropShadowEffect ShadowDepth="3"/>
                                         </TextBlock.Effect>
                                     </TextBlock>
+
+                                    <ContentControl x:Name="LibraryManagement_PluginAgeRating" Height="32"
+                                                    DockPanel.Dock="Right" Margin="5,0,0,0"
+                                                    VerticalAlignment="Center" HorizontalAlignment="Right" />
                                 </DockPanel>
 
                                 <Grid DockPanel.Dock="Top" Margin="0,10,0,10" Background="Transparent">
