@@ -5,12 +5,12 @@
     <sys:String x:Key="LOCSuccessStoryEarned">Earned</sys:String>
 
     <sys:String x:Key="LOCSuccessStoryManualAchievements">Manual Achievements</sys:String>
-    
+
     <sys:String x:Key="LOCSuccessStoryHiddenTrophy">Hidden Trophy</sys:String>
 
     <sys:String x:Key="LOCSsRefreshRaretyManual">Refresh rarity for manual achievements</sys:String>
     <sys:String x:Key="LOCSsRefreshEstimateTimeManual">Refresh estimate time for manual achievements</sys:String>
-    
+
     <!-- MainView -->
 
     <sys:String x:Key="LOCSuccessStory">SuccessStory</sys:String>
@@ -49,12 +49,11 @@
     <sys:String x:Key="LOCSuccessStoryNotificationsEpicDisabled">Epic is enabled in SuccessStory but the library extension has been disabled in Playnite</sys:String>
     <sys:String x:Key="LOCSuccessStoryNotificationsEpicNoAuthenticate">Epic user is not authenticated</sys:String>
     <sys:String x:Key="LOCSuccessStoryNotificationsGw2BadConfig">GuildWars 2 has not been correctly configured in settings</sys:String>
-    
+
     <!-- SuccessStoreGameSelection -->
 
     <sys:String x:Key="LOCSuccessStoryAchievementsCount">Achievements count</sys:String>
-    
-    
+
     <!-- SuccessStorySettingsView -->
 
     <sys:String x:Key="LOCSuccessStoryProgressBar">Processing, please wait...</sys:String>
@@ -98,7 +97,7 @@
     <sys:String x:Key="LOCSuccessStoryRefreshDataInstalledRecent">Installed games</sys:String>
 
     <sys:String x:Key="LOCSuccessStoryIntegrationViewItemWithProgressBar">Progression with a progress bar</sys:String>
-    
+
     <sys:String x:Key="LOCSuccessStoryIntegrationShowGraphic">Display achievements chart</sys:String>
     <sys:String x:Key="LOCSuccessStoryIntegrationShowAchievements">Display achievements list</sys:String>
     <sys:String x:Key="LOCSuccessStoryIntegrationShowAchievementsCompact">Display the achievements list compact</sys:String>
@@ -155,7 +154,7 @@
 
     <sys:String x:Key="LOCSuccessStoryRarityConfig">Rarity configuration</sys:String>
     <sys:String x:Key="LOCSuccessStoryUseUltraRare">Use ultra rare achievements</sys:String>
-    
+
     <sys:String x:Key="LOCSuccessStoryEnableImageCache">Enable caching achievements images *</sys:String>
     <sys:String x:Key="LOCSuccessStoryEnableImageCacheToolTip" xml:space="preserve">Non-blocking process which can increase memory usage a bit when caching only.
 Especially useful for Xbox achievements with their larges images which are reduced when caching.</sys:String>
@@ -170,14 +169,14 @@ Especially useful for Xbox achievements with their larges images which are reduc
     <sys:String x:Key="LOCSuccessStoryIconAddOnImage">Added icon on locked achievements</sys:String>
     <sys:String x:Key="LOCSuccessStoryIconCustomLocked">Custom icon for locked achievements</sys:String>
     <sys:String x:Key="LOCSuccessStoryIconCustomOnlyMissing">Only when icon is missing</sys:String>
-    
+
     <sys:String x:Key="LOCSuccessStoryUseLocalised">Use localised achievements</sys:String>
 
     <!-- SuccessStoryOneGameView -->
 
     <sys:String x:Key="LOCSuccessStoryFirstUnlock">First unlock</sys:String>
     <sys:String x:Key="LOCSuccessStoryLastUnlock">Last unlock</sys:String>
-    
+
     <sys:String x:Key="LOCSuccessStoryAchStats">Achievements statistics</sys:String>
     <sys:String x:Key="LOCSuccessStoryUserStats">User statistics</sys:String>
 
@@ -216,14 +215,13 @@ Especially useful for Xbox achievements with their larges images which are reduc
     <sys:String x:Key="LOCSsEnableGenshinImpactAchievements">Enable Genshin Impact achievements</sys:String>
     <sys:String x:Key="LOCAddGenshinImpact">Add Genshin Impact</sys:String>
 
-    
     <!-- Overwatch -->
 
     <sys:String x:Key="LOCSsOverwatchQuickPlay">Quick Play</sys:String>
     <sys:String x:Key="LOCSsOverwatchCompetitivePlay">Competitive Play</sys:String>
 
     <sys:String x:Key="LOCSsOverwatchGamesWon">{0} games won</sys:String>
-    
+
     <sys:String x:Key="LOCSsOverwatchTopHero">Top Hero</sys:String>
     <sys:String x:Key="LOCSsOverwatchCareerStats">Career Stats</sys:String>
 
@@ -238,7 +236,7 @@ Especially useful for Xbox achievements with their larges images which are reduc
     <sys:String x:Key="LOCSsQuickSearchDescription">Search games on SuccessStory data</sys:String>
     <sys:String x:Key="LOCSsQuickSearchByTime">Find by estimate time to full unlock</sys:String>
     <sys:String x:Key="LOCSsQuickSearchByPercent">Find by progression</sys:String>
-    
+
     <sys:String x:Key="LOCSsQuickSearchInfo" xml:space="preserve">The plugin uses the functionality of the QuickSearch plugin.
 To use it, you must validate the "successstory" or "ss" command.    
         

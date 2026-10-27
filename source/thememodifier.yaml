@@ -1,4 +1,4 @@
-Constants:
+﻿Constants:
   - Miscellaneous
   - DE_DetailsIconsVisibility: Visibility of icons in details
   - DE_LimitFeaturesHeight: Limit features height
@@ -28,7 +28,7 @@ Constants:
   - DE_ShowGamePropertyHorizontally: Display game properties horizontally
   - GameActivity
   - GA_ShowAvgFps: Display the average FPS in game details view
-  - SuccessStory
+  - PlayniteAchievements / SuccessStory
   - SS_ShowProgressBar: Display a progress bar in the tab
   - LibraryManagement
   - LM_ShowFeaturesLabel: Display the features label in FeaturesIconsList

@@ -14,6 +14,7 @@
     <!-- PlayerActivitiesSettingsView -->
 
     <sys:String x:Key="LOCPaEnableSuccessStoryData">Display SuccessStory data (required SuccessStory plugin)</sys:String>
+    <sys:String x:Key="LOCPaEnablePlayniteAchievementsData">Display PlayniteAchievements data (required PlayniteAchievements plugin)</sys:String>
     <sys:String x:Key="LOCPaEnableScreenshotsVisualizerData">Display ScreenshotsVisualizer data (required ScreenshotsVisualizer plugin)</sys:String>
     <sys:String x:Key="LOCPaEnableHowLongToBeatData">Display HowLongToBeat data (required HowLongToBeat plugin)</sys:String>
 
@@ -31,6 +32,9 @@
 
     <sys:String x:Key="LOCPaSuccessStoryUnlocked">You have unlocked {0} achievements.</sys:String>
     <sys:String x:Key="LOCPaSuccessStoryGoal">You have reached {0}% achievements.</sys:String>
+
+    <sys:String x:Key="LOCPaPlayniteAchievementsUnlocked">You have unlocked {0} achievements.</sys:String>
+    <sys:String x:Key="LOCPaPlayniteAchievementsGoal">You have reached {0}% achievements.</sys:String>
 
     <sys:String x:Key="LOCPaScreenshotsTaked">You have taked {0} screenshots.</sys:String>
 
@@ -61,6 +65,7 @@
 
     <sys:String x:Key="LOCPaHowLongToBeatPluginView">View HowLongToBeat datas</sys:String>
     <sys:String x:Key="LOCPaSuccessStoryPluginView">View SuccessStory datas</sys:String>
+    <sys:String x:Key="LOCPaPlayniteAchievementsPluginView">View PlayniteAchievements datas</sys:String>
     <sys:String x:Key="LOCPaScreenshotsVisualizerPluginView">View ScreenshotsVisualizer datas</sys:String>
 
 </ResourceDictionary>

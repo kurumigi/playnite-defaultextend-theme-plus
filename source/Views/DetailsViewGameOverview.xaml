@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                     mc:Ignorable="d">
 
     <Style TargetType="{x:Type DetailsViewGameOverview}">
@@ -16,9 +16,9 @@
                                   d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameDetailsIntance}">
                         <Grid>
                             <ContentControl x:Name="DuplicateHider_ContentControl" Panel.ZIndex="1"
-                                            VerticalAlignment="Top" 
-                                            HorizontalAlignment="Center" 
-                                            Margin="0,10,0,0" 
+                                            VerticalAlignment="Top"
+                                            HorizontalAlignment="Center"
+                                            Margin="0,10,0,0"
                                             Tag="{DynamicResource DuplicateHider_ContentControlHeader_Style}" />
 
                             <StackPanel Name="PART_ImageContener" Tag="{DynamicResource DE_LimitBackgroundHeight}">
@@ -83,7 +83,7 @@
                                     </Grid.RowDefinitions>
 
                                     <!-- CheckLocalizations flags -->
-                                    <StackPanel HorizontalAlignment="Right" Margin="0,10,20,0" Grid.Row="0" 
+                                    <StackPanel HorizontalAlignment="Right" Margin="0,10,20,0" Grid.Row="0"
                                                 Tag="{PluginSettings Plugin=CheckLocalizations, Path=EnableIntegrationFlags}">
                                         <StackPanel.Style>
                                             <Style TargetType="{x:Type StackPanel}">
@@ -99,8 +99,8 @@
                                         <Border Padding="5" VerticalAlignment="Top"
                                                 BorderBrush="{DynamicResource NormalBorderBrush}"
                                                 CornerRadius="{DynamicResource ControlCornerRadius}"
-                                                BorderThickness="{DynamicResource ControlBorderThickness}" 
-                                                Background="{DynamicResource ButtonBackgroundBrush}"  
+                                                BorderThickness="{DynamicResource ControlBorderThickness}"
+                                                Background="{DynamicResource ButtonBackgroundBrush}"
                                                 Tag="{PluginSettings Plugin=CheckLocalizations, Path=HasData}">
                                             <Border.Style>
                                                 <Style TargetType="{x:Type Border}">
@@ -140,8 +140,8 @@
                                         <Border Padding="5" VerticalAlignment="Top"
                                                 BorderBrush="{DynamicResource NormalBorderBrush}"
                                                 CornerRadius="{DynamicResource ControlCornerRadius}"
-                                                BorderThickness="{DynamicResource ControlBorderThickness}" 
-                                                Background="{DynamicResource ButtonBackgroundBrush}"  
+                                                BorderThickness="{DynamicResource ControlBorderThickness}"
+                                                Background="{DynamicResource ButtonBackgroundBrush}"
                                                 Tag="{PluginSettings Plugin=LibraryManagement, Path=HasData}">
                                             <Border.Style>
                                                 <Style TargetType="{x:Type Border}">
@@ -259,7 +259,7 @@
                                         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" Margin="0,15,0,0">
                                             <Button Name="PART_ButtonPlayAction"
                                                     Width="150" Height="40" Style="{DynamicResource PlayButton}" />
-                                            <Button Name="PART_ButtonContextAction" 
+                                            <Button Name="PART_ButtonContextAction"
                                                     Width="150" Height="40" />
                                             <Button Name="PART_ButtonMoreActions"
                                                     Content="{DynamicResource LOCMoreAction}"
@@ -290,10 +290,16 @@
                                                             Visibility="{PluginSettings Plugin=CheckDlc, Path=HasData, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
                                             <!-- SuccessStory Button -->
-                                            <ContentControl x:Name="SuccessStory_PluginButton" Height="40" Margin="10,0,0,0" FontSize="18" 
+                                            <ContentControl x:Name="SuccessStory_PluginButton" Height="40" Margin="10,0,0,0" FontSize="18"
                                                             MinWidth="{Binding ElementName=PART_ButtonEditGame, Path=ActualWidth}"
                                                             MaxWidth="150"
                                                             Visibility="{PluginSettings Plugin=SuccessStory, Path=HasData, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}" />
+
+                                            <!-- PlayniteAchievements Button -->
+                                            <ContentControl x:Name="PlayniteAchievements_AchievementButton" Height="40" Margin="10,0,0,0" FontSize="18"
+                                                            MinWidth="{Binding ElementName=PART_ButtonEditGame, Path=ActualWidth}"
+                                                            MaxWidth="150"
+                                                            Visibility="{PluginSettings Plugin=PlayniteAchievements, Path=HasData, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
                                             <!-- ScreenshotsVisualizer plugin button -->
                                             <ContentControl x:Name="ScreenshotsVisualizer_PluginButton" Height="40" Margin="10,0,0,0" FontSize="16"
@@ -306,7 +312,7 @@
                                                             Visibility="{PluginSettings Plugin=HowLongToBeat, Path=HasData, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
                                             <!-- GameActivity Button -->
-                                            <ContentControl x:Name="GameActivity_PluginButton" Height="40" Margin="10,0,0,0" FontSize="16" 
+                                            <ContentControl x:Name="GameActivity_PluginButton" Height="40" Margin="10,0,0,0" FontSize="16"
                                                             MinWidth="{Binding ElementName=PART_ButtonEditGame, Path=ActualWidth}"
                                                             MaxWidth="150"
                                                             Visibility="{PluginSettings Plugin=GameActivity, Path=HasData, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}" />
@@ -336,7 +342,7 @@
                                                 <Border Padding="5" Height="40"
                                                         BorderBrush="{DynamicResource NormalBorderBrush}"
                                                         CornerRadius="{DynamicResource ControlCornerRadius}"
-                                                        BorderThickness="{DynamicResource ControlBorderThickness}" 
+                                                        BorderThickness="{DynamicResource ControlBorderThickness}"
                                                         Background="{DynamicResource ButtonBackgroundBrush}">
                                                     <Border.Style>
                                                         <Style TargetType="{x:Type Border}">
@@ -351,7 +357,7 @@
 
                                                     <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
                                                         <Label Content="{DynamicResource LOCGameActivityAvgFps}" HorizontalAlignment="Center" />
-                                                        <Label Margin="10,0,0,0" 
+                                                        <Label Margin="10,0,0,0"
                                                                Content="{PluginSettings Plugin=GameActivity, Path=AvgFpsAllSession}"
                                                                HorizontalAlignment="Center" />
                                                     </StackPanel>
@@ -681,7 +687,7 @@
 
                                                 <!-- ScreenshotsVisualizer single picture -->
                                                 <StackPanel Visibility="{PluginSettings Plugin=ScreenshotsVisualizer, Path=EnableIntegrationShowSinglePicture, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}">
-                                                    <StackPanel Visibility="{Binding ElementName=ScreenshotsVisualizer_PluginSinglePicture, Path=Content.Visibility}" Margin="0,0,0,15">                                                
+                                                    <StackPanel Visibility="{Binding ElementName=ScreenshotsVisualizer_PluginSinglePicture, Path=Content.Visibility}" Margin="0,0,0,15">
                                                         <TextBlock Text="{DynamicResource LOCSsvTitle}" Style="{DynamicResource BaseTextBlockStyle}" />
                                                         <Separator Background="{DynamicResource PanelSeparatorBrush}" Margin="0,5,0,5" />
                                                         <ContentControl x:Name="ScreenshotsVisualizer_PluginSinglePicture" MinHeight="100" MaxHeight="300" />
@@ -710,7 +716,7 @@
                                                                   HtmlFontSize="{DynamicResource FontSize}"
                                                                   HtmlFontFamily="{DynamicResource FontFamily}"
                                                                   HtmlForeground="{DynamicResource TextColor}"
-                                                                  LinkForeground="{DynamicResource GlyphColor}"                                      
+                                                                  LinkForeground="{DynamicResource GlyphColor}"
                                                                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                                                                   ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
                                                 </StackPanel>
@@ -830,7 +836,7 @@
                                                                                     <Storyboard>
                                                                                         <DoubleAnimation Duration="0:0:0.1" To="1"
                                                                                                                                      Storyboard.TargetName="BorderScale"
-                                                                                                                                     Storyboard.TargetProperty="ScaleX" 
+                                                                                                                                     Storyboard.TargetProperty="ScaleX"
                                                                                                                                      />
                                                                                         <DoubleAnimation Duration="0:0:0.1" To="1"
                                                                                                                                      Storyboard.TargetName="BorderScale"
@@ -910,7 +916,7 @@
                                                                                     <Storyboard>
                                                                                         <DoubleAnimation Duration="0:0:0.1" To="1"
                                                                                                                          Storyboard.TargetName="BorderScale"
-                                                                                                                         Storyboard.TargetProperty="ScaleX" 
+                                                                                                                         Storyboard.TargetProperty="ScaleX"
                                                                                                                          />
                                                                                         <DoubleAnimation Duration="0:0:0.1" To="1"
                                                                                                                          Storyboard.TargetName="BorderScale"
@@ -976,7 +982,7 @@
                                                 </StackPanel>
                                             </TabItem.Header>
 
-                                            <ContentControl x:Name="ScreenshotsVisualizer_PluginScreenshots" Margin="10" 
+                                            <ContentControl x:Name="ScreenshotsVisualizer_PluginScreenshots" Margin="10"
                                                             MaxHeight="{Binding ElementName=PART_GridEx, Path=ActualHeight}" VerticalAlignment="Top" />
                                         </TabItem>
 
@@ -1008,6 +1014,39 @@
                                                 <ContentControl x:Name="SuccessStory_PluginCompactLocked" Margin="0,15,0,0" MaxHeight="150" />
                                                 <ContentControl x:Name="SuccessStory_PluginList" Margin="0,15,0,0" MinHeight="50" MaxHeight="500" />
                                                 <ContentControl x:Name="SuccessStory_PluginUserStats" Margin="0,15,0,0" MinHeight="50" MaxHeight="200" />
+                                            </StackPanel>
+                                        </TabItem>
+
+                                        <TabItem Visibility="{PluginSettings Plugin=PlayniteAchievements, Path=HasData, Mode=OneWay, FallbackValue={x:Static Visibility.Collapsed}}">
+                                            <TabItem.Header>
+                                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Tag="{DynamicResource SS_ShowProgressBar}" Name="PART_PATabHeader">
+                                                    <TextBlock Text="{DynamicResource LOCPlayniteAchievementsAchievements}" />
+
+                                                    <ProgressBar Minimum="0" Maximum="100" Height="{DynamicResource FontSizeLarge}" Width="80" Margin="5,0,0,0"
+                                                                 Visibility="{Binding ElementName=PART_PATabHeader, Path=Tag, Converter={StaticResource BooleanToVisibilityConverter}}"
+                                                                 Value="{PluginSettings Plugin=PlayniteAchievements, Path=ProgressPercentage}" />
+
+                                                    <StackPanel Orientation="Horizontal" Margin="5,0,0,0"
+                                                                Visibility="{Binding ElementName=PART_PATabHeader, Path=Tag, Converter={StaticResource InvertedBooleanToVisibilityConverter}}">
+                                                        <TextBlock Text="("  />
+                                                        <TextBlock Text="{PluginSettings Plugin=PlayniteAchievements, Path=UnlockedCount, Mode=OneWay, FallbackValue=''}" />
+                                                        <TextBlock Text="/" />
+                                                        <TextBlock Text="{PluginSettings Plugin=PlayniteAchievements, Path=AchievementCount, Mode=OneWay, FallbackValue=''}" />
+                                                        <TextBlock Text=")" />
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </TabItem.Header>
+
+                                            <StackPanel Margin="10">
+                                                <ContentControl x:Name="PlayniteAchievements_AchievementProgressBar" Margin="0,0,0,8" />
+                                                <ContentControl x:Name="PlayniteAchievements_AchievementBarChart" Margin="0,8" />
+                                                <ContentControl x:Name="PlayniteAchievements_AchievementCompactList" Margin="0,8" />
+                                                <ContentControl x:Name="PlayniteAchievements_AchievementCompactLatest" Margin="0,8" HorizontalAlignment="Left" />
+                                                <ContentControl x:Name="PlayniteAchievements_AchievementCompactUnlockedList" Margin="0,8" />
+                                                <ContentControl x:Name="PlayniteAchievements_AchievementCompactLockedList" Margin="0,8" />
+                                                <ContentControl x:Name="PlayniteAchievements_AchievementDataGrid" Margin="0,8" />
+                                                <ContentControl x:Name="PlayniteAchievements_AchievementStats" Margin="0,8" />
+                                                <ContentControl x:Name="PlayniteAchievements_AchievementPieChart" Margin="0,8,0,0" MaxHeight="300" />
                                             </StackPanel>
                                         </TabItem>
 
@@ -1079,7 +1118,7 @@
                                 Playnite.SDK.Models.Game Game;
                                 Boolean IsCurrent;  // True if this copy eqal to the current GameContext property.
                                 BitmapImage Icon;   // Source Icon
-                                String SourceName;  // Source name. Use this rather than Game.Source.Name, 
+                                String SourceName;  // Source name. Use this rather than Game.Source.Name,
                                                     // because Source might be null.
                                 ICommand LaunchCommand;
                                 ICommand SelectCommand;
@@ -1087,8 +1126,8 @@
                                 ICommand UninstallCommand;
                             }
                         -->
-                        <ItemsControl x:Name="DH_ListBox" Focusable="False" IsTextSearchEnabled="False" 
-                                      ItemsSource="{Binding Games}" 
+                        <ItemsControl x:Name="DH_ListBox" Focusable="False" IsTextSearchEnabled="False"
+                                      ItemsSource="{Binding Games}"
                                       VirtualizingPanel.VirtualizationMode="Recycling">
                             <ItemsControl.ItemsPanel>
                                 <ItemsPanelTemplate>
@@ -1150,7 +1189,7 @@
                                                     <DropShadowEffect Color="Black" Opacity="0.75" BlurRadius="5" ShadowDepth="0" />
                                                 </Image.Effect>
                                             </Image>
-                                            <TextBlock x:Name="_SourceText" Margin="5,0,5,0" VerticalAlignment="Center" 
+                                            <TextBlock x:Name="_SourceText" Margin="5,0,5,0" VerticalAlignment="Center"
                                                        Foreground="White" Text="{Binding SourceName}" Style="{DynamicResource BaseTextBlockStyle}">
                                                 <TextBlock.Effect>
                                                     <DropShadowEffect Color="Black" Opacity="0.75" BlurRadius="5" ShadowDepth="0" />
@@ -1163,8 +1202,8 @@
                                             </StackPanel.InputBindings>
                                         </StackPanel>
                                         <!--  Rectangle used to indicate the currently selected copy.  -->
-                                        <Rectangle x:Name="_Rect" Height="2" Margin="0,3,0,0" 
-                                                   VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0" 
+                                        <Rectangle x:Name="_Rect" Height="2" Margin="0,3,0,0"
+                                                   VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0"
                                                    Visibility="Visible">
                                             <Rectangle.Fill>
                                                 <SolidColorBrush Color="{StaticResource GlyphColor}" />
