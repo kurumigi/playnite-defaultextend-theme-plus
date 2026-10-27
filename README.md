@@ -10,6 +10,8 @@ Modified version of [playnite-defaultextend-theme](https://github.com/Lacro59/pl
   * Changed menu buttons to split into two rows due to narrow width.
   * Added a new option to show game background image.
   * Added a new option to show game properties with multiple values ​​horizontally.
+* Supported plugins
+  * [PlayniteAchievements](https://github.com/justin-delano/PlayniteAchievements/)
 
 ---
 __The rest of this readme is unchanged.__
